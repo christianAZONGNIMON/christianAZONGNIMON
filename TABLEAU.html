@@ -58,11 +58,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
-		table, tr, th, td{
-			border:2px solid black;
+		table{
 			border-collapse:collapse;
-
 		}
+		td{
+			border:2px solid black;
+		}	
+		no-right-border{
+			border-right: none;
+		}
+			
 	</style>
 </head>
 <body>
@@ -71,10 +76,9 @@
   
 <thead> <!-- En-tête du tableau --> 
 
-<tr>
- <th rowspan="1">
+<tr class="no-right-border"rowspan"2">
  	<font color="yellow"> IG-1</font>
- </th> 
+ </tr> 
  
    </thead>  
 
@@ -84,7 +88,7 @@
  <td > GTL-1 </td> 
  <td > GC-1 </td> 
  
-	</tr>  
+</tr>  
 </tbody> 
 </table>    
 </body>
